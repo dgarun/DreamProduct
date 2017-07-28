@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/lib/angular.min.js"></script>
+<script src="js/app/master.js"></script>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+
+<div ng-app="dreamApp">
+	<div ng-controller="masterController">
+		<div ng-model="masterModel">
+			<div>
+				<input ng-model="textBox" type="text" name="inputBox" placeholder="Enter Text Here"/>
+			</div>
+		</div>	
+		<div ng-model="data">
+			<input type="button" ng-click="starter(textBox)" value="Try Me!"/>{{data}}
+		</div>
+	</div>
+</div>
+
+<h2>Landing Page!</h2>
+</body>
+</html>
